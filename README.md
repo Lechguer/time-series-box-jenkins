@@ -58,7 +58,7 @@ La série présente les trois caractéristiques typiques des **séries airline**
 | Série originale | 1.157 | 0.996 | Non stationnaire |
 | log(série) | 0.264 | 0.976 | Non stationnaire |
 | log + d=1 | −2.810 | 0.057 | Non stationnaire |
-| **log + d=1 + D=1** | **−5.284** | **0.000** | ✅ **Stationnaire** |
+| **log + d=1 + D=1** | **−5.284** | **0.000** |  **Stationnaire** |
 
 ### 3. Identification des ordres
 
@@ -85,9 +85,9 @@ Justification : parcimonie maximale (2 paramètres), cohérence ACF/PACF, BIC co
 
 | Paramètre | Estimation | Erreur std | p-value |
 |---|---|---|---|
-| MA(1) — θ₁ | −0.1754 | 0.0677 | 0.010 ✅ |
-| MA sais. — Θ₁ | −0.9303 | 0.2174 | 0.000 ✅ |
-| σ² | 0.00126 | 0.0002 | 0.000 ✅ |
+| MA(1) — θ₁ | −0.1754 | 0.0677 | 0.010  |
+| MA sais. — Θ₁ | −0.9303 | 0.2174 | 0.000  |
+| σ² | 0.00126 | 0.0002 | 0.000  |
 
 ---
 
@@ -100,8 +100,8 @@ Justification : parcimonie maximale (2 paramètres), cohérence ACF/PACF, BIC co
 | **MAPE** | **11.8 %** |
 | Biais | +173.19 $ |
 
-> ✅ MAPE de **11,8 %** sur 24 mois — classé **"bon"** selon la grille usuelle (10–20 %)  
-> ⚠️ Biais positif expliqué par l'accélération non linéaire du prix en 2010–2011 (crise dettes souveraines + QE massif), non anticipable par un modèle linéaire.
+>  MAPE de **11,8 %** sur 24 mois — classé **"bon"** selon la grille usuelle (10–20 %)  
+>  Biais positif expliqué par l'accélération non linéaire du prix en 2010–2011 (crise dettes souveraines + QE massif), non anticipable par un modèle linéaire.
 
 ---
 
@@ -116,7 +116,7 @@ Justification : parcimonie maximale (2 paramètres), cohérence ACF/PACF, BIC co
 
 ---
 
-## 🚀 Lancer le notebook
+##  Lancer le notebook
 
 ```bash
 git clone https://github.com/Lechguer/time-series-box-jenkins.git
