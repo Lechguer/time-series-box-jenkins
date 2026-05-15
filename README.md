@@ -1,25 +1,25 @@
-# 📈 Gold Price Forecasting — SARIMA (Box & Jenkins)
+#  Gold Price Forecasting — SARIMA (Box & Jenkins)
 
 > **Modélisation et prévision du prix mensuel de l'or** via la méthode de Box & Jenkins  
 > Série : janvier 2000 – décembre 2011 · 144 observations · USD / once troy
 
 ---
 
-## 🗂️ Contenu du repo
+##  Contenu du repo
 
 ```
-├── notebook/
+├── Code/
 │   └── gold_price_sarima.ipynb   # Pipeline complet Python
 ├── rapport/
 │   └── Rapport_Projet_SC.pdf     # Rapport détaillé (10 pages)
 ├── data/
-│   └── gold_monthly.csv          # Série brute (LBMA PM Fix)
+│   └── GoldPrices.txt          # Série brute (LBMA PM Fix)
 └── README.md
 ```
 
 ---
 
-## 🎯 Objectif
+##  Objectif
 
 Appliquer la méthode **Box & Jenkins** de bout en bout sur une série réelle :
 
@@ -30,7 +30,7 @@ Appliquer la méthode **Box & Jenkins** de bout en bout sur une série réelle :
 
 ---
 
-## 📊 Données
+##  Données
 
 | Paramètre | Valeur |
 |---|---|
@@ -43,13 +43,13 @@ Appliquer la méthode **Box & Jenkins** de bout en bout sur une série réelle :
 
 ---
 
-## 🔬 Méthodologie
+##  Méthodologie
 
 ### 1. Analyse qualitative
 La série présente les trois caractéristiques typiques des **séries airline** :
-- 📈 Tendance fortement croissante (×5 en 12 ans)
-- 🔄 Saisonnalité annuelle (pic automnal : Diwali + Nouvel An chinois)
-- 📉 Variance croissante → transformation logarithmique nécessaire
+-  Tendance fortement croissante (×5 en 12 ans)
+-  Saisonnalité annuelle (pic automnal : Diwali + Nouvel An chinois)
+-  Variance croissante → transformation logarithmique nécessaire
 
 ### 2. Stationnarisation
 
@@ -91,7 +91,7 @@ Justification : parcimonie maximale (2 paramètres), cohérence ACF/PACF, BIC co
 
 ---
 
-## 📉 Résultats des prévisions
+##  Résultats des prévisions
 
 | Métrique | Valeur |
 |---|---|
@@ -105,7 +105,7 @@ Justification : parcimonie maximale (2 paramètres), cohérence ACF/PACF, BIC co
 
 ---
 
-## 🛠️ Stack technique
+##  Stack technique
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)
 ![R](https://img.shields.io/badge/R-4.x-276DC3?style=flat&logo=r&logoColor=white)
@@ -127,13 +127,13 @@ jupyter notebook notebook/gold_price_sarima.ipynb
 
 ---
 
-## 📄 Rapport
+##  Rapport
 
 Le rapport complet (10 pages) est disponible dans [`rapport/Rapport_Projet_SC.pdf`](rapport/Rapport_Projet_SC.pdf).
 
 ---
 
-## 👤 Auteur
+##  Auteur
 
 **Zakaria Lechguer** — Data & Software Engineering  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Zakaria_Lechguer-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/zakaria-lechguer)
